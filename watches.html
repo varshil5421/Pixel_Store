@@ -1,0 +1,295 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products - Your Shopping Website</title>
+</head>
+<body>
+    <script src="cart.js"></script>
+
+    <header>
+        
+        <h1>The Pixel Store</h1>
+        <!-- Other navigation links -->
+
+    <!-- Rest of your content -->
+
+    <script>
+        function redirectToCart() {
+            window.location.href = 'cart.html';
+        }
+    </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Mobile Phones</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="buds.html">Buds</a></li>
+                <li><a href="Watches.html">Watches</a></li>
+                <li><a href="speakers.html">speakers</a></li>
+                <li><a href="Tablet.html">Tablet</a></li>
+
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="https://www.shareicon.net/data/512x512/2016/11/14/851952_cart_512x512.png" alt="Cart Logo" onclick="redirectToCart()">
+        </div>
+    </header>
+
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <video controls autoplay>
+                    <source src="y2mate.com - Sneak Peek at Google Pixel Watch 2_1080p.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    
+            <div class="mySlides fade">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+          
+          
+        </div>
+        <script>
+            var video = document.getElementById('myVideo');
+            video.addEventListener('mouseenter', function() {
+                video.play();
+            });
+        </script>
+        
+        <section class="product-list">
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/ChwUKjnV1k-rB-X5UuRble4HO1-Xh72TkaOz2Lb30GXcXMNNVJ6JlEjxWBi5stpSynXu4uzL3WOdJTijQrbZxVyCTUy1AsURS0p0=rw-e365-w3000" alt="Product 1">
+                <h2>Fitbit Sense 2</h2>
+                <p class="price">$329.95</p>
+                <a href="#" onclick="addToCart('Google Pixel 8', 749.99,'https://lh3.googleusercontent.com/ChwUKjnV1k-rB-X5UuRble4HO1-Xh72TkaOz2Lb30GXcXMNNVJ6JlEjxWBi5stpSynXu4uzL3WOdJTijQrbZxVyCTUy1AsURS0p0=rw-e365-w3000')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>AMOLED Display </h3>
+                <h3>Corning® Gorilla® Glass 3</h3><br>
+                   <h3>Case Size</h3> 
+                      <p>40.5 X 40.5 mm,square</p>
+                          <h3>OS complatibility</h3>
+                          <p> Android 9 or newer, iOS 14.0 or newer</p>
+                          <h3>Health And Fitness</h3>
+                          <p>Continuous heart rate tracking6<br>
+                            All-day body response tracking for stress<br>
+                            Irregular heart rhythm notifications<br>
+                            Skin temperature sensing6,7<br>
+                            SpO2 tracking<br>
+                            Advanced sleep tracking6<br>
+                            SmartTrack™ exercise tracking (in mobile app only)</p>
+                        <h3>Productivity</h3>
+                        <p>Alexa<br>
+                            Google Wallet and Maps<br>
+                            Calendar notifications</p>
+                        <h3>Connectivity</h3>
+                        <p>Bluetooth/Wi-Fi<br>
+                            Text, app notifications and calls with phone nearby</p>
+
+            </div>
+            
+
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/foMAnrFrXagwp44k53wZ2MWsHrAVsOuh2v1pgF08L6CFgiEEehsaTha81yv2G9KoRxrkpoEwR8dwaMObS_I95iJk6NJ5TbvBsg=rw-e365-w3000" alt="Product 2">
+                <h2>Google Pixel Watch 2</h2>
+                <p class="price">$479.99    </p>
+                <a href="#" onclick="addToCart('Google Pixel Watch 2', 349,'https://lh3.googleusercontent.com/foMAnrFrXagwp44k53wZ2MWsHrAVsOuh2v1pgF08L6CFgiEEehsaTha81yv2G9KoRxrkpoEwR8dwaMObS_I95iJk6NJ5TbvBsg=rw-e365-w3000')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>Custome AMOLED Display with DCI-P3 color</h3>
+                <h3>Corning® Gorilla® Glass 5</h3><br>
+                   <h3>Case Size</h3> 
+                      <p>41 mm,round</p>
+                          <h3>OS complatibility</h3>
+                          <p> Android 9 or newer</p>
+                          <h3>Health And Fitness</h3>
+                          <p>Fitbit's most advanced heart rate tracking<br>
+                            All-day body response tracking for stress<br>
+                            Irregular heart rhythm notifications6<br>
+                            Skin temperature sensing6<br>
+                            SpO2 tracking</p>
+                        <h3>Safety and emergency</h3>
+                        <p>Safety Check<br>
+                            Emergency Sharing<br>
+                            Fall Detection</p>
+                        <h3>Productivity</h3>
+                        <p>Google Assistant<br>
+                            Google Wallet and Maps<br>
+                            Calendar notifications</p>
+                        <h3>Connectivity</h3>
+                        <p>4G LTE + Bluetooth/Wi-Fi<br>
+                            4G LTE for calls, text, music and apps, without phone nearby<br>
+                            Text, app notifications and calls with phone nearby</p>
+                    
+                </ol>
+            </div>
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/zbOYxWakU6XA46-oVSeLx9BJUfWIQ2MTe6oK7MariYNb60cKJl4BsKRdTbs2ArqSiJvJxwLGgQUhTgDQp09un89cY7X6VCV9uBQ=rw-e365-w2046" alt="Product 3">
+                <h2>Google Pixel watch</h2>
+                <p class="price">$379.99</p>
+                <a href="#" onclick="addToCart('Google Pixel watch', 279,'https://lh3.googleusercontent.com/zbOYxWakU6XA46-oVSeLx9BJUfWIQ2MTe6oK7MariYNb60cKJl4BsKRdTbs2ArqSiJvJxwLGgQUhTgDQp09un89cY7X6VCV9uBQ=rw-e365-w2046')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>Custome AMOLED Display with DCI-P3 color</h3>
+                <h3>Corning® Gorilla® Glass 5</h3><br>
+                   <h3>Case Size</h3> 
+                      <p>41 mm,round</p>
+                          <h3>OS complatibility</h3>
+                          <p> Android 9 or newer</p>
+                          <h3>Health And Fitness</h3>
+                          <p>Continuous heart rate tracking<br>
+                            Stress Management Score<br>
+                            SpO2 tracking6<br>
+                            Advanced sleep tracking<br>
+                            Auto Workout mode</p>
+                        <h3>Safety and emergency</h3>
+                        <p>Safety Check<br>
+                            Emergency Sharing<br>
+                            Fall Detection</p>
+                        <h3>Productivity</h3>
+                        <p>Google Assistant<br>
+                            Google Wallet and Maps<br>
+                            Calendar notifications</p>
+                        <h3>Connectivity</h3>
+                        <p>4G LTE + Bluetooth/Wi-Fi<br>
+                            4G LTE for calls, text, music and apps, without phone nearby<br>
+                            Text, app notifications and calls with phone nearby</p>
+            </div>
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/5yjOFm5I6AfwEjNDJAutHnyzzfjrUHO-2DFURGQiJhjeVx3ETU5FXaRNg6yNmolbe2kIX4MkQJ_3eTUSvLtScpnD256ZCetSVQ=rw-e365-w3000" alt="Product 1">
+                <h2>Fitbit Versa 4</h2>
+                <p class="price">$259.95</p>
+                <a href="#" onclick="addToCart('Fitbit Versa', 249.99,'https://lh3.googleusercontent.com/5yjOFm5I6AfwEjNDJAutHnyzzfjrUHO-2DFURGQiJhjeVx3ETU5FXaRNg6yNmolbe2kIX4MkQJ_3eTUSvLtScpnD256ZCetSVQ=rw-e365-w3000')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>AMOLED Display</h3>
+                <h3>Corning® Gorilla® Glass 3</h3><br>
+                   <h3>Case Size</h3> 
+                      <p>40.5 x 40.5 mm, square</p>
+                          <h3>OS complatibility</h3>
+                          <p> Android 9 or newer</p>
+                          <h3>Health And Fitness</h3>
+                          <p>Continuous heart rate tracking<br>
+                            Stress Management Score<br>
+                            Irregular heart rhythm notifications<br>
+                            SpO2 tracking<br>
+                            Advanced sleep tracking<br>
+                            SmartTrack™ exercise tracking (in mobile app only)</p>
+                        <h3>Productivity</h3>
+                        <p>Alexa<br>
+                            Google Wallet and Maps<br>
+                            Calendar notifications</p>
+                        <h3>Connectivity</h3>
+                        <p>Bluetooth/Wi-Fi<br>
+                            Text, app notifications and calls with phone nearby</p>
+
+            </div>
+                <div class="product">
+                    <img src="https://lh3.googleusercontent.com/LVy5VJ0lFmU6U42FCdiM0Petdddj6M2w1KJDlhzldhRLMEh-YB8h5hQWwrUfTYvDc25TCqKdjRkGX-xFV_eeuZUSGP1cI3f3TMIs=rw-e365-w2046" alt="Product 1">
+                    <h2>Fitbit Charge 6</h2>
+                    <p></p>
+                    <p class="price">$219.95</p>
+                    <a href="#" onclick="addToCart('Fitbit Versa', 249.99,'https://lh3.googleusercontent.com/5yjOFm5I6AfwEjNDJAutHnyzzfjrUHO-2DFURGQiJhjeVx3ETU5FXaRNg6yNmolbe2kIX4MkQJ_3eTUSvLtScpnD256ZCetSVQ=rw-e365-w3000')">Add to Cart</a>
+                    <h2>Features:</h2>
+                    <h3>Heart rate on gym equipment</h3>
+                    <h3>YouTube Music controls</h3>
+                    <h3>Google Maps and Wallet</h3><br>    
+                      <p>40+ exercise modes</p>
+                          <h3>OS complatibility</h3>
+                          <p> Android 9 or higher, iOS 14.0 or higher</p>
+                    <h3>Colors</h3>
+                    <p>Obsidian/Black Aluminum<br>
+                        Coral/Champagne Gold Aluminum<br>
+                        Porcelain/Silver Aluminum</p>
+                    <h3>Dimensions and weight</h3>
+                        <p>Length: 40.5 mm (1.59 in)<br>
+                            Width: 40.5 mm (1.59 in)<br>                       
+                            Height: 11.2 mm (0.44 in)<br>                          
+                            Weight: 37.64 g (0.08 lb)</p>
+    
+                </div>
+                <div class ="product">
+                    <img src="https://lh3.googleusercontent.com/UKchtCXMFKjePg36TyO0BjEpyPjkdvXglZIwzXbEjgALtynEmuOElCdfUFkq_cb2bDRRYArRIwMqsJUTKHPGP8FuHj3nKmROl0w=rw-e365-w2046" alt="Product 1">
+                <h2>Fitbit Inspire 3</h2>
+                <p class="price">$89.95</p>
+                <a href="#" onclick="addToCart('Fitbit Versa', 249.99,'https://lh3.googleusercontent.com/5yjOFm5I6AfwEjNDJAutHnyzzfjrUHO-2DFURGQiJhjeVx3ETU5FXaRNg6yNmolbe2kIX4MkQJ_3eTUSvLtScpnD256ZCetSVQ=rw-e365-w3000')">Add to Cart</a>
+                <h2>Features:</h2>
+                    <h3>Health & Fitness Tracker</h3>
+                    <h3>Always-on wellness tracking</h3>
+                    <h3>Stress Management Score</h3><br>    
+                      <p>Up to 10-day battery</p>
+                          <h3>OS complatibility</h3>
+                          <p> Android 9 or higher, iOS 14.0 or higher</p>
+                          <h3>Colors</h3>
+                          <p>Midnight Zen<br>
+                            Lilac Bliss<br>  
+                            Morning Glow</p>
+                          <h3>Dimensions and weight</h3>
+                              <p>Length: 1.55 in (39.37 mm)<br>
+                                Width: 0.73 in (18.6 mm)<br>                            
+                                Height: 0.46 in (11.75 mm)<br>                              
+                                Weight: 0.039 lb (17.69 g)</p>
+
+
+            </div>
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/4x-t6eg8FIN0cew7iH7_6NgRuMInPlx225adl-peI9VYMiMjMdFCbiem810LzmIkgxDqZrmMLPL66UowSbYmvd5Itcb3guvDc7-G=rw-e365-w2046" alt="Product 1">
+                <h2>Fitbit luxe</h2>
+                <p></p>
+                <p class="price">$249.99</p>
+                <a href="#" onclick="addToCart('Fitbit Versa', 249.99,'https://lh3.googleusercontent.com/5yjOFm5I6AfwEjNDJAutHnyzzfjrUHO-2DFURGQiJhjeVx3ETU5FXaRNg6yNmolbe2kIX4MkQJ_3eTUSvLtScpnD256ZCetSVQ=rw-e365-w3000')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>Jewellery design</h3>
+                <h3>Vibrant colour display</h3>
+                <h3>Light, deep and REM sleep tracking</h3>  
+                  <p>Up to five days of battery life</p>
+                      <h3>OS complatibility</h3>
+                      <p> Android 9 or higher, iOS 14.0 or higher</p>
+                      <h3>Colors</h3>
+                      <p>Black/Graphite<br>
+                        Lunar White/Soft Gold<br>
+                        Orchid/Platinum</p>
+                      <h3>Dimensions and weight</h3>
+                          <p>Length: 3.7 cm (1.43 in)<br>
+                            Width: 1.70 cm (0.69 in)<br>
+                            Height: 1.30 cm (0.40 in)<br> 
+                            Weight: 26.20 g (0.06 lb)</p>
+
+            </div>
+            
+        
+
+            <!-- Display all products here -->
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Online Store</p>
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+     <script src="script.js"></script>
+
+</body>
+</html>

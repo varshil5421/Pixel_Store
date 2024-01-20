@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products - Your Shopping Website</title>
+</head>
+<body>
+    <script src="cart.js"></script>
+
+    <header>
+        
+        <h1>The Pixel Store</h1>
+        <!-- Other navigation links -->
+
+    <!-- Rest of your content -->
+
+    <script>
+        function redirectToCart() {
+            window.location.href = 'cart.html';
+        }
+    </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Mobile Phones</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="buds.html">Buds</a></li>
+                <li><a href="Watches.html">Watches</a></li>
+                <li><a href="speakers.html">speakers</a></li>
+                <li><a href="Tablet.html">Tablet</a></li>
+
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart" onclick="redirectToCart()"></i>
+        </div> 
+    </header>
+
+
+    <main>
+        
+        <section class="product-list">
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/VziT-VGxZkIOBFgNT9R37WLWCd2CqpnSdlT1QeZdiXW8NKz0OOEjQW8bD0vrrl7gZU3xQ6c3nRZSV05D1tOiMvTU5vN7AJtXug=rw-e365-w3000" alt="Product 1">
+                <h2>Pixel buds pro</h2>
+                <p></p>
+                <p class="price">$259.99</p>
+                <a href="#" onclick="addToCart(' Pixel buds pro', 749.99,'https://lh3.googleusercontent.com/VziT-VGxZkIOBFgNT9R37WLWCd2CqpnSdlT1QeZdiXW8NKz0OOEjQW8bD0vrrl7gZU3xQ6c3nRZSV05D1tOiMvTU5vN7AJtXug=rw-e365-w3000')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>Active Noise Cancellation With Silent Seal</h3>
+                <h3>Total Listening Time(including Charging Case)</h3>
+                <p>Up to 31 Hours</p>
+                <h3>Transparecy Mode</h3>
+                <h3>Wireless Charging</h3>
+                <h3>Google Assistant</h3>
+
+
+            </div>
+            
+
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/8SDBZsQ8hOYjFfmUOgYZW6HXr4qxlyMoFifvE3-y7dHXNTLid3URif4r3Sk2fAYrnGGXlzxdufZM3wcydXHyobabWZdepBbNeQ=rw-e365-w3000" alt="Product 2">
+                <h2>Pixel buds A series</h2>
+                <p> </p>
+                <p class="price">$139</p>
+                <a href="#" onclick="addToCart('Pixel buds A series', 139,'https://lh3.googleusercontent.com/foMAnrFrXagwp44k53wZ2MWsHrAVsOuh2v1pgF08L6CFgiEEehsaTha81yv2G9KoRxrkpoEwR8dwaMObS_I95iJk6NJ5TbvBsg=rw-e365-w3000')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>Active Noise Cancellation </h3>
+                <h3>Total Listening Time(including Charging Case)</h3>
+                <p>Up to 24 Hours</p>
+                <h3>Google Assistant</h3>
+            </div>
+                <!-- Display all products here -->
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Online Store</p>
+    </footer>
+
+</body>
+</html>

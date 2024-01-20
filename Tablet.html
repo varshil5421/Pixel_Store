@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products - Your Shopping Website</title>
+</head>
+<body>
+    <script src="cart.js"></script>
+    <header>
+        
+        <h1>The Pixel Store</h1>
+        <!-- Other navigation links -->
+
+    <!-- Rest of your content -->
+
+    <script>
+        function redirectToCart() {
+            window.location.href = 'cart.html';
+        }
+    </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Mobile Phones</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="buds.html">Buds</a></li>
+                <li><a href="Watches.html">Watches</a></li>
+                <li><a href="speakers.html">speakers</a></li>
+                <li><a href="Tablet.html">Tablet</a></li>
+
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart" onclick="redirectToCart()"></i>
+        </div> 
+    </header>
+
+
+    <main>
+        
+        <section class="product-list">
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/CJszRttsY828Ef1clGcQ6w5YcnDk11VXlzE1ndNtGi6Ax_WOEhoo9S6S1YsBx-wXEJIpDgLp3LKIeQypKihf9iipP8ZOUSHFr3fW=rw-e365-nu-w1938" alt="Product 1">
+                <h2>Nest Hub (Gen 2)</h2>
+                <p></p>
+                <p class="price">$259.99</p>
+                <a href="#" onclick="addToCart(' Pixel buds pro', 749.99,'https://lh3.googleusercontent.com/CJszRttsY828Ef1clGcQ6w5YcnDk11VXlzE1ndNtGi6Ax_WOEhoo9S6S1YsBx-wXEJIpDgLp3LKIeQypKihf9iipP8ZOUSHFr3fW=rw-e365-nu-w1938')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>7-inch Touchscreen Display</h3>
+                <h3>Media Streaming</h3>
+                <h3>Google Assistant Integration</h3><br>    
+                  <p>Soli Technology</p>
+                  <p>Smart Home Control</p>
+                  <p>Live Albums</p>
+
+            </div>
+            <section class="product-list">
+                <div class="product">
+                    <img src="https://lh3.googleusercontent.com/bd4xvcXAjVai2NkP2RIEf7-WjEef6OkUfPMWOBw8qdr5TVCPF86LDr7lJacjeKE8O4YAxdNtvb3VRiOtZuoQ1ctSLg8W5h6k2oM=rw-e365-nu-w1938" alt="Product 1" width="2000px">
+                    <h2>Nest Hub Max</h2>
+                    <p></p>
+                    <p class="price">$299</p>
+                    <a href="#" onclick="addToCart(' Pixel buds pro', 749.99,'https://lh3.googleusercontent.com/CJszRttsY828Ef1clGcQ6w5YcnDk11VXlzE1ndNtGi6Ax_WOEhoo9S6S1YsBx-wXEJIpDgLp3LKIeQypKihf9iipP8ZOUSHFr3fW=rw-e365-nu-w1938')">Add to Cart</a>
+                    <h2>Features:</h2>
+                    <h3>Symphony-quality sound</h3>
+                    <h3>Stereo Speakers</h3>
+                    <h3>10-inch HD Touchscreen Display</h3><br>    
+                      <p>Built-In Camera</p>
+                      <p>Gesture Controls</p>
+                      <p>Multi-Room Audio</p>
+                </div>
+                </section>  
+            </main>
+        
+            <footer>
+                <p>&copy; 2023 Your Online Store</p>
+            </footer>
+        
+        </body>
+        </html>
+        

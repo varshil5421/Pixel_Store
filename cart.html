@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping Cart - Your Shopping Website</title>
+</head>
+
+
+
+<body>
+     
+    <header>
+        
+        <h1>The Pixel Store</h1>
+        <!-- Other navigation links -->
+
+    <!-- Rest of your content -->
+
+    <script>
+        function redirectToCart() {
+            window.location.href = 'cart.html';
+        }
+    </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Mobile Phones</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="buds.html">Buds</a></li>
+                <li><a href="Watches.html">Watches</a></li>
+                <li><a href="speakers.html">speakers</a></li>
+                <li><a href="Tablet.html">Tablet</a></li>
+
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart" onclick="redirectToCart()"></i>
+        </div> 
+    </header>
+
+    <section class="cart-items">
+        <h2>Cart Items</h2>
+        <div id="cart-container">
+            <!-- Cart items will be displayed here dynamically using JavaScript -->
+        </div>
+        <button onclick="redirectToProductPage()">Add More Items</button>
+    
+    
+            <!-- Cart items will be displayed here dynamically using JavaScript -->
+    
+    </section>
+    <SCRIPT>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        // ... Populate the cart items in the UI
+        populateCartItems(cartItems);
+    
+        // Set a timeout to clear the cart after 30 minutes (1800000 milliseconds)
+        setTimeout(function() {
+            localStorage.removeItem('cart');
+            populateCartItems([]);
+        }, 1800000); // 30 minutes
+    });
+    
+    function populateCartItems(items) {
+        var cartContainer = document.getElementById('cart-container');
+        cartContainer.innerHTML = ''; // Clear the cart container
+        items.forEach(function(item) {
+            var itemDiv = document.createElement('div');
+            itemDiv.classList.add('cart-item');
+            var productImage = document.createElement('img');
+            productImage.src = item.imageUrl;
+            productImage.alt = item.productName;
+            itemDiv.appendChild(productImage);
+            var productName = document.createElement('p');
+            productName.textContent = item.productName;
+            itemDiv.appendChild(productName);
+            var price = document.createElement('p');
+            price.textContent = item.price;
+            itemDiv.appendChild(price);
+            cartContainer.appendChild(itemDiv);
+        });
+    }
+    
+
+function redirectToProductPage() {
+    window.location.href = 'index.html';
+}
+
+
+
+    </script>
+   
+
+
+    <main>
+        
+        
+        
+    </main>
+
+
+    <footer>
+        <!-- Similar footer as the home page -->
+    </footer>
+</body>
+</html>

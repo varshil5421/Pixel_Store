@@ -1,0 +1,202 @@
+/* Your common styles go here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#0e0e0e;
+}
+
+header {
+    background-color:white; /* Change the background color to a suitable color */
+    color: #ebe3e3; /* Change the text color to ensure readability */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1em;
+}
+h1
+{
+    margin: 0;
+    font-family: Avenir Next LT Pro;
+    background: linear-gradient(to right, BLUE, RED, ORANGE, green, blue, RED, ORANGE,GREEN,BLUE,RED,ORANGE,GREEN); /* Apply a gradient color */
+            -webkit-background-clip: text;
+            color: transparent;
+}
+h2{
+    background: linear-gradient(to right, RED, ORANGE, rgb(198, 68, 89), yellow, RED,RED,ORANGE,rgb(198, 68, 89));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h3
+{
+    color: whitesmoke;
+}
+p
+{
+    color: whitesmoke;
+}
+li
+{
+    color: whitesmoke;
+}
+ol
+{
+    color: whitesmoke;
+}
+.cart-icon i {
+    color:black; /* Change the color of the cart icon to red */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height:fit-content;;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+/* Add CSS for dots (optional) */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+table
+{
+    background-color:#0c0c0c;
+}
+
+
+/* The rest of the CSS remains the same */
+.product-table {
+    width: 100%; 
+}
+
+.product-table td {
+    border: 1px solid #ccc; /* Add borders to the table cells */
+    padding: 20px; /* Add padding to the table cells */
+    text-align: center; /* Center align the content in the table cells */
+    border-radius: 10PX;
+}
+
+.product-table img {
+    max-width: 100%;
+    height: auto;
+}
+.product-table a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #000; /* Set the color of the link */
+    display: block; /* Make the entire cell clickable */
+}
+
+.product-table a:hover {
+    background-color: #ece4e4; /* Add background color on hover */
+}
+.logo
+{
+align-self: flex-start;
+}
+.logo img {
+    max-height: 50px;
+}
+
+
+nav {
+    margin-top: 1em;
+    color: #ebe3e3;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: #ccc;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    color: #bbb;
+}
+nav ul li a
+{
+    font: bolder;
+    background: linear-gradient(to right, BLUE, RED, ORANGE, green, blue, RED, ORANGE,GREEN,BLUE,RED,ORANGE,GREEN); /* Apply a gradient color */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    padding: 0 10px; 
+}
+main {
+    padding: 2em;
+}
+
+
+section {
+    margin-bottom: 2em;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product{
+    border:1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em 0;
+    width: calc(33.33% - 20px); /* Adjust the width based on your design */
+    box-sizing: border-box;
+    text-align: center;
+}
+.grid-container {
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+
+    background-color: #fff;
+  }
+  
+  .item {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+img{
+    max-width: 100%;
+    height: auto;
+}
+button
+{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+}

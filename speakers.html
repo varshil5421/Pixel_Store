@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products - Your Shopping Website</title>
+</head>
+<body>
+    <script src="cart.js"></script>
+
+    <header>
+        
+        <h1>The Pixel Store</h1>
+        <!-- Other navigation links -->
+
+    <!-- Rest of your content -->
+
+    <script>
+        function redirectToCart() {
+            window.location.href = 'cart.html';
+        }
+    </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Mobile Phones</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="buds.html">Buds</a></li>
+                <li><a href="Watches.html">Watches</a></li>
+                <li><a href="speakers.html">speakers</a></li>
+                <li><a href="Tablet.html">Tablet</a></li>
+
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart" onclick="redirectToCart()"></i>
+        </div> 
+    </header>
+
+    <main>
+        
+        <section class="product-list">
+            <div class="product">
+                <img src="https://lh3.googleusercontent.com/K90ZhJhPZpR7LcX9m8AUWxMmNKP4wpUuk6Xfg6tYXXoWSaNkSOBiYzO_ZiYhEHigKMJRKk66VkuUYbdpP5SaOg=w1000" alt="Product 1">
+                <h2>Nest Audio</h2>
+                <p></p>
+                <p class="price">$129.99</p>
+                <a href="#" onclick="addToCart(' Nest Audio', 129,'https://lh3.googleusercontent.com/K90ZhJhPZpR7LcX9m8AUWxMmNKP4wpUuk6Xfg6tYXXoWSaNkSOBiYzO_ZiYhEHigKMJRKk66VkuUYbdpP5SaOg=w1000')">Add to Cart</a>
+                <h2>Features:</h2>
+                <h3>Rich and Clear Sound</h3>
+                <h3>Stereo Pairing</h3>
+                <h3>Voice Match</h3><br>    
+                  <p>Multi-room Audio</p>
+                  <p>Touch Controls</p>
+                  <p>Adaptive Sound</p>
+                   
+
+            </div>
+            <section class="product-list">
+                <div class="product">
+                    <img src="https://lh3.googleusercontent.com/h1LW2MWU9ls10dKWdLZa6MhpbPDDj9SZcl9DucncUCil8-LbvbaUtqwoMv7zeEF47DKYoxXP83NrQkvWfKxdAq0" alt="Product 1" width="2000px">
+                    <h2>Google Nest Mini</h2>
+                    <p></p>
+                    <p class="price">$69</p>
+                    <a href="#" onclick="addToCart('Google Nest Mini', 69,'https://lh3.googleusercontent.com/h1LW2MWU9ls10dKWdLZa6MhpbPDDj9SZcl9DucncUCil8-LbvbaUtqwoMv7zeEF47DKYoxXP83NrQkvWfKxdAq0')">Add to Cart</a>
+                    <h2>Features:</h2>
+                    <h3>Voice Control with Google Assistant</h3>
+                    <h3>Improved Audio Quality</h3>
+                    <h3>Wall Mount Compatibility</h3><br>    
+                      <p>Environmental Awareness</p>
+                      <p>Touch Controls</p>
+                    
+                </div>
+                </section>  
+            </main>
+        
+            <footer>
+                <p>&copy; 2023 Your Online Store</p>
+            </footer>
+        
+        </body>
+        </html>
+        
